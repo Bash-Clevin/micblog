@@ -27,5 +27,5 @@ app.post('/posts/:id/comments', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`comments listening on port ${4001}`)
+    console.log(`comments listening on port ${port}`)
 })
