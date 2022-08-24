@@ -53,7 +53,7 @@ app.listen(port, async () => {
     console.log(`Query listening on port ${port}`)
 
     // get events that  were missed during downtime
-    const res = await axios.get('http://localhost:4005/events')
+    const res = await axios.get('http://event-bus:4005/events')
 
     for (let event of res.data) {
         console.log('Processing event', event.type)
